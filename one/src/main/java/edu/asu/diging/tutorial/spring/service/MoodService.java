@@ -9,11 +9,17 @@ import edu.asu.diging.tutorial.spring.domain.Mood;
 @Service
 public class MoodService implements MoodServiceInterface{
 
+	String[] moods;
+	String[] reasons;
+		
 	public Mood getCurrentMood(){
-		String[] moods = {"happy", "sad", "disgust"};
-		String[] reasons = {"work done", "no long weekend", "they donot keep my word"};
 		Random random = new Random();
 		int index = random.nextInt(moods.length);
 		return new Mood(moods[index], reasons[index]);
+	}
+
+	public void congiure() {
+		moods = new String[] {"happy", "sad", "disgust"};
+		reasons = new String[] {"work done", "no long weekend", "they donot keep my word"};		
 	}
 }

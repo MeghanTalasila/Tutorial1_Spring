@@ -4,4 +4,5 @@ import edu.asu.diging.tutorial.spring.domain.Mood;
 
 public interface MoodServiceInterface {
 	public Mood getCurrentMood();
+	public void congiure();
 }
