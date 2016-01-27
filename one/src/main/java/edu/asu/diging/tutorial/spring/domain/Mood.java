@@ -4,6 +4,15 @@ public class Mood {
 
 	private String feeling;
 	private String reason;
+	private String meaning;
+
+	public String getMeaning() {
+		return meaning;
+	}
+
+	public void setMeaning(String meaning) {
+		this.meaning = meaning;
+	}
 
 	public String getReason() {
 		return reason;
@@ -21,10 +30,11 @@ public class Mood {
 		this.feeling = feeling;
 	}
 
-	public Mood(String mood, String reason) {
+	public Mood(String mood, String reason, String meaning) {
 		super();
 		this.feeling = mood;
 		this.reason = reason;
+		this.meaning = meaning;
 	}
 	
 	

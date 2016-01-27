@@ -32,4 +32,10 @@ public class HomeController {
 		map.addAttribute("mood", service.getCurrentMood());
 		return "explanation";
 	}
+	
+	@RequestMapping(value = "/about")
+	public String about(ModelMap map){
+		map.addAttribute("mood", service.getCurrentMood());
+		return "about";
+	}
 }
