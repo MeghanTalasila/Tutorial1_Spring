@@ -23,12 +23,13 @@ public class HomeController {
 	@RequestMapping(value = "/")
 	public String home(ModelMap map){
 		map.addAttribute("mood", service.getCurrentMood());
-		return "index";
+		return "home";
 	}
+	
 	
 	@RequestMapping(value = "/reason")
 	public String reason(ModelMap map){
 		map.addAttribute("mood", service.getCurrentMood());
-		return "Content";
+		return "explanation";
 	}
 }
